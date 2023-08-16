@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Age Counter</title>
+    <link rel="stylesheet" href="style.css" media="all" />
+  </head>
+  <body>
+    <div class="card">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="256px" height="256px" fill-rule="nonzero"><g fill="#7d8082" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(4,4)"><path d="M5,9v22l18,23h18zM59,9v22l-6,8h-18z"></path></g></g></svg>
+      <h1 class="text-board" id="textBoard">Age Counter</h1>
+      <h1 class="age-results" id="ageResults"></h1>
+      <label for="yearOfBirth">Year Of Birth</label>
+      <input type="number" name="yearOfBirth" id="yearOfBirth" value="" />
+      <button
+        id="submit"
+        type="button"
+        onclick="ageCounter()"
+        class="btn btn--light"
+      >
+        <span class="btn__inner">
+          <span class="btn__slide"></span>
+          <span class="btn__content">Count Your Age</span>
+        </span>
+      </button>
+    </div>
+
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
