@@ -11,10 +11,10 @@ yearInput.addEventListener("keyup", function (event) {
 });
 
 function ageCounter() {
-  let yearOfBirth = yearInput.value;
+  let yearOfBirth = parseInt(yearInput.value);
+  let ageResults = currentYear - yearOfBirth;
 
   if (yearOfBirth) {
-    let ageResults = currentYear - yearOfBirth;
     ageDisplay.innerHTML = ageResults + " Years";
     textBoard.innerHTML = "Your Age Is";
     if (ageResults == 1) {
